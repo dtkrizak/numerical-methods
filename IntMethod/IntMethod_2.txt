@@ -1,0 +1,8 @@
+set terminal png
+set output "/Users/DanielK/Desktop/Fortran/IntMethod_2.png"
+set title "Temperature vs. Time for IntMethod Part 2"
+set xlabel "Time (s)"
+set ylabel "Temperature (˚C)"
+set yrange [50:*]
+set key left
+plot "/Users/DanielK/Desktop/Fortran/IntMethod_2.dat" with linespoints title "Int Method"

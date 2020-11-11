@@ -1,0 +1,7 @@
+set terminal png
+set output "/Users/DanielK/Desktop/Fortran/IntRKMethod_2F.png"
+set title "F1 vs. Time for Int and RK Method Part 2 (Tau = 2)"
+set xlabel "Time (s)"
+set ylabel "F1 (kg/s)"
+set key bottom left
+plot "/Users/DanielK/Desktop/Fortran/RKMethod_2F.dat" with linespoints title "RK Method", "/Users/DanielK/Desktop/Fortran/IntMethod_2F.dat" with linespoints title "Int Method"

@@ -1,0 +1,8 @@
+set terminal png
+set output "/Users/DanielK/Desktop/Fortran/RKMethod.png"
+set title "Temperature vs. Time for RKMethod"
+set xlabel "Time (s)"
+set ylabel "Temperature (˚C)"
+set yrange [50:*]
+set key left
+plot "/Users/DanielK/Desktop/Fortran/RKMethod.dat" with linespoints title "RK Method"

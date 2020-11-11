@@ -1,0 +1,8 @@
+set terminal png
+set output "/Users/DanielK/Desktop/Fortran/IntRKMethod_Part2All.png"
+set title "Temperature vs. Time for Int and RK Method Part 2 (All Tau)"
+set xlabel "Time (s)"
+set ylabel "Temperature (˚C)"
+set yrange [50:*]
+set key left
+plot "/Users/DanielK/Desktop/Fortran/RKMethod_2.dat" with linespoints title "RK Tau=2", "/Users/DanielK/Desktop/Fortran/IntMethod_2.dat" with linespoints title "Int Tau=2", "/Users/DanielK/Desktop/Fortran/RKMethod_4.dat" with linespoints title "RK Tau=4", "/Users/DanielK/Desktop/Fortran/IntMethod_4.dat" with linespoints title "Int Tau=4", "/Users/DanielK/Desktop/Fortran/RKMethod_6.dat" with linespoints title "RK Tau=6", "/Users/DanielK/Desktop/Fortran/IntMethod_6.dat" with linespoints title "Int Tau=6"

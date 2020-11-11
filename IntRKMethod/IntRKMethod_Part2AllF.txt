@@ -1,0 +1,7 @@
+set terminal png
+set output "/Users/DanielK/Desktop/Fortran/IntRKMethod_Part2AllF.png"
+set title "F1 vs. Time for Int and RK Method Part 2 (All Tau)"
+set xlabel "Time (s)"
+set ylabel "F1 (kg/s)"
+set key top right
+plot "/Users/DanielK/Desktop/Fortran/RKMethod_2F.dat" with linespoints title "RK Tau=2", "/Users/DanielK/Desktop/Fortran/IntMethod_2F.dat" with linespoints title "Int Tau=2", "/Users/DanielK/Desktop/Fortran/RKMethod_4F.dat" with linespoints title "RK Tau=4", "/Users/DanielK/Desktop/Fortran/IntMethod_4F.dat" with linespoints title "Int Tau=4", "/Users/DanielK/Desktop/Fortran/RKMethod_6F.dat" with linespoints title "RK Tau=6", "/Users/DanielK/Desktop/Fortran/IntMethod_6F.dat" with linespoints title "Int Tau=6"

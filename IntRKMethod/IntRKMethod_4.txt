@@ -1,0 +1,8 @@
+set terminal png
+set output "/Users/DanielK/Desktop/Fortran/IntRKMethod_4.png"
+set title "Temperature vs. Time for Int and RK Method Part 2 (Tau = 4)"
+set xlabel "Time (s)"
+set ylabel "Temperature (˚C)"
+set yrange [50:*]
+set key left
+plot "/Users/DanielK/Desktop/Fortran/RKMethod_4.dat" with linespoints title "RK Method", "/Users/DanielK/Desktop/Fortran/IntMethod_4.dat" with linespoints title "Int Method"
